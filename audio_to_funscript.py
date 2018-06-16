@@ -90,12 +90,13 @@ class audio_to_funscript:
             if read < self.hop_s: break
         
         self.funscriptFile.header = ('//'
+        'method: '+ self.o.method + ","+                            
         'awhitening: '+ str(self.o.get_awhitening())+","+
         'compression: '+str(self.o.get_compression())+","+
         'silence: '+str(self.o.get_silence())+","+
         'delay_ms: '+str(self.o.get_delay_ms())+","+
         'threshold: '+str(self.o.get_threshold())+","+
-        'minioi_ms: '+str(self.o.get_minioi_ms())+
+        'minioi_ms: '+str(self.o.get_minioi_ms())+" "+
         self.funscriptFile.header
         )
         
