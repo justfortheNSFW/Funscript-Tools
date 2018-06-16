@@ -6,6 +6,17 @@ Detailed info on onset methods here: https://aubio.org/manpages/latest/aubioonse
 Available onset methods:
 default, energy, hfc, complex, phase, specdiff, kl, mkl, specflux
 
+Example of calling the class to get a funscript file output:
+
+path = 'C:/Users/justfortheNSFW/Downloads/'
+file = 'MV - Wiggle.mp4'
+method = "complex"
+a2f = audio_to_funscript(path, file, method)
+a2f.assignOnsetVariables(threshold=0.65, delay_ms=26.69, silence=-10, compression=1.0, awhitening=1, minioi_ms=133)
+a2f.processAudio()
+a2f.outputFile()
+
+
 '''
 
 from create_funscript import create_funscript
