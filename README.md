@@ -10,7 +10,8 @@ I have added the audio_to_funscript class that will take either a mp3 or mp4 fil
 
 I've written this in Python 3.6.1
 
-Dependancies:
+Dependancies:  
+
 aubio https://aubio.org/manual/latest/python_module.html#python  
 scriptplayer https://github.com/FredTungsten
 
