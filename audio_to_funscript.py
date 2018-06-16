@@ -18,7 +18,6 @@ a2f.outputFile()
 
 
 '''
-
 from create_funscript import create_funscript
 from aubio import source, onset, tempo
 
@@ -83,12 +82,22 @@ class audio_to_funscript:
         pos = 99
         while True:
             samples, read = self.s()
-            if o(samples):
+            if self.o(samples):
                 pos = abs(pos-99)
                 self.funscriptFile.addAction(pos,int(self.o.get_last_ms()))
                 
             total_frames += read
             if read < self.hop_s: break
+        
+        self.funscriptFile.header = ('//'
+        'awhitening: '+ str(self.o.get_awhitening())+","+
+        'compression: '+str(self.o.get_compression())+","+
+        'silence: '+str(self.o.get_silence())+","+
+        'delay_ms: '+str(self.o.get_delay_ms())+","+
+        'threshold: '+str(self.o.get_threshold())+","+
+        'minioi_ms: '+str(self.o.get_minioi_ms())+
+        self.funscriptFile.header
+        )
         
         self.isProcessed = True
         print('You have successfully processed the audio')
@@ -102,3 +111,4 @@ class audio_to_funscript:
         #outputs the funscript file, this assumes the source file extension is a full stop followed by 3 characters
         self.funscriptFile.outputFile(path, file[0:len(file)-4])
         print("file has been output to:" + path)
+
