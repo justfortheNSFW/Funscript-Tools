@@ -12,6 +12,7 @@ I've written this in Python 3.6.1
 
 Dependancies:
 aubio https://aubio.org/manual/latest/python_module.html#python
+scriptplayer https://github.com/FredTungsten
 
 Misc Useful whls:  
 
