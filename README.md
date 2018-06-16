@@ -12,6 +12,7 @@ Dependancies:
 aubio https://aubio.org/manual/latest/python_module.html#python
 
 Misc Useful whls:
-pyHook-1.5.1-cp36-cp36m-win_amd64.whl
-pyserial-3.4-py2.py3-none-any.whl
-pygame-1.9.3-cp36-cp36m-win_amd64.whl
+pyHook-1.5.1-cp36-cp36m-win_amd64.whl  
+pyserial-3.4-py2.py3-none-any.whl  
+pygame-1.9.3-cp36-cp36m-win_amd64.whl  
+
