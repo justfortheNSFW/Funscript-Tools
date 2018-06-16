@@ -1,1 +1,3 @@
 # Funscript-Tools
+
+Hey people, donations in XMR to this address: 427zxTu5XprGVXw5boeNkLYZh2E3TVz2fFVnpGZ452h1XBwP9BZy6r7YWnmdoTSAVW6ayR5dWHmyDJqzeR4gfKhbVhpckxM
