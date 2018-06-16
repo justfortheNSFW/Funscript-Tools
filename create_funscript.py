@@ -29,7 +29,7 @@ class create_funscript:
         out = self.out
         self.addBar(['75',out,'50',out,'25',out,'0',out], timeGap)
     
-    def deleteActions():
+    def deleteActions(self):
         listOfActions = []
         
     def outputFile(self, path, fileName):
