@@ -81,7 +81,12 @@ class audio_to_funscript:
         
         self.isProcessed = True
         print('You have successfully processed the audio')
-
+    
+    def deleteActions(self):
+        self.funscriptFile.deleteActions()
+        self.isProcessed = False
+        print("you have deleted the actions")
+    
     def outputFile(self):
         #outputs the funscript file, this assumes the source file extension is a full stop followed by 3 characters
         self.funscriptFile.outputFile(path, file[0:len(file)-4])
