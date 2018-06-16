@@ -28,6 +28,9 @@ class create_funscript:
     def addSawtooth(self, timeGap):
         out = self.out
         self.addBar(['75',out,'50',out,'25',out,'0',out], timeGap)
+    
+    def deleteActions():
+        listOfActions = []
         
     def outputFile(self, path, fileName):
         with open(path + fileName + ".funscript", "w") as text_file:
